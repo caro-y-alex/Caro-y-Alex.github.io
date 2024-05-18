@@ -1,0 +1,589 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Caro y Alex</title>
+    <meta name="description" content="Nos gustaría mucho que nos acompañaras en este gran día">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Caro y Alex se casan!">
+    <meta property="og:description" content="Nos gustaria mucho que nos acompañaras">
+    <!--meta property="og:image" content="https://wedding.ramswaroop.me/img/hero-min.jpg"-->
+    <meta property="og:type" content="website">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#ffffff">
+
+    <script>
+        // load css files from CDN if local node_modules fail
+        function loadCssFromCDN(css) {
+            // create new link tag
+            const link = document.createElement('link');
+            if (css === 'animate.css') {
+                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css';
+            } else if (css === 'font-awesome.css') {
+                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+            }
+            link.rel = 'stylesheet';
+
+            // add link tag to head section
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+
+        // load js files from CDN if local node_modules fail
+        function loadJsFromCDN(js) {
+            if (js === 'waypoints.js') {
+                document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"><\/script>');
+            } else if (js === 'jquery.js') {
+                document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"><\/script>');
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/queries.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" onerror="loadCssFromCDN('animate.css')">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" onerror="loadCssFromCDN('font-awesome.css')">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body id="top">
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+<section class="hero">
+    <section class="navigation">
+        <header>
+            <div class="header-content">
+                <div class="logo"><a href="#"><img src="img/logo.png" alt="Logo"></a></div>
+                <div class="header-nav">
+                    <nav>
+                        <ul class="primary-nav">
+                            <li><a href="#intro">Intro</a></li>
+                            <li><a href="#events">Itinerario</a></li>
+                            <li><a href="#hotel">Hospedaje</a></li>
+                            <!-- 
+									intro
+									itinerario
+									dressCode
+								Mesa de Regalos
+									Foud My HoneyMoon
+									Sugerencia de Hotel
+									Confirmacion 
+								Libro de Vicitas
+								Contactanos(por si tienes dudas,  mandanos un WhattsApp)
+								Que cancion crees que no peude faltar
+
+							-->
+
+                            <li><a href="#fondea">Crowdfunding</a></li>
+                            <li class="hidden-sm hidden-xs"><a href="#video-bg">Un vistasito a la ciudad</a></li>
+                        </ul>
+                        <ul class="member-actions">
+                            <li><a href="#map" class="login">Recepcion</a></li>
+                            <li><a href="#rsvp" class="btn-white btn-small">Confirmacion</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="navicon">
+                    <a class="nav-toggle" href="#"><span></span></a>
+                </div>
+            </div>
+        </header>
+    </section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="hero-content text-center">
+                    <!--<h1>Ram and Antara</h1>-->
+                    <img src="img/logo-lg.png">
+                    <!--<p class="intro">Ram & Antara are getting hitched!</p>-->
+                    <!--<a href="#" class="btn btn-fill btn-large btn-margin-right">Scroll Down</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 hidden-xs"></div>
+            <div class="col-sm-4 hidden-xs text-center">
+				<a href="#rsvp" class="btn btn-accent btn-large rsvp-btn">Confirmars</a>
+			</div>
+            <div class="col-sm-4 hidden-xs"></div>
+        </div>
+    </div>
+    <div class="down-arrow floating-arrow"><a href="#invitation"><i class="fa fa-angle-down"></i></a></div>
+</section>
+
+<section id="invitation" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3>¡ Nos Casamos !</h3>
+                <p>La fecha es el próximo 14 de Septiembre, 2024 y nos encantaría que nos acompañes</p>
+                <!--div class="share-bar"></div-->
+            </div>
+        </div>
+    </div>
+	<div class="container">
+        <div class="row">
+            <div class="section-border section-padding"></div>
+        </div>
+    </div>
+    
+</section>
+
+<section id="intro">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="header">“El matrimonio es el anillo de oro en una cadena cuyo comienzo es una mirada y cuyo final es la eternidad”  Kahlil Gibran </h3>
+            </div>
+        </div>
+        <div class="row">
+            <!--div class="col-md-3 hidden-sm hidden-xs"><img src="img/IMG_2317.jpg" class="wp1"></div-->
+				<div>
+	            	<p>Is this the real life? Is this just fantasy?<br>
+					Caught in a landslide, no escape from reality<br>
+					Open your eyes, look up to the skies and see<br>
+					I'm just a poor boy, I need no sympathy<br>
+					Because I'm easy come, easy go, little high, little low<br>
+					Any way the wind blows doesn't really matter to me, to me</p>
+				</div>
+            <!-- div class="col-md-3 hidden-sm hidden-xs"><img src="img/DSD_0214.jpg" class="wp2"></div-->
+        </div>
+		<!--
+        <div class="row">
+            <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/IMG_2317.jpg" class="wp8"></div>
+            <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/DSD_0214.jpg" class="wp9"></div>
+        </div>
+		-->
+    </div>
+	 <div class="container">
+        <div class="row">
+            <div class="section-border section-padding"></div>
+        </div>
+    </div>
+    
+</section>
+
+<section class="events section-padding" id="events">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="header">Itinerario</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
+                <div class="wp3">
+                    <p><strong>14 de Septiembre</strong></p>
+
+                    <h5>Ceremonia Religiosa <span class="time">5:30PM - 6:30PM</span></h5>
+                    <p>La ceremonia religiosa se llevará a cabo en la iglesia El Buen Pastor, en la direccion, tal
+                        les recomendamos estacionarse al rededor del parque aledaño a la iglesia. Pero aguas, porque
+                        puede haber rateros.
+                        Recuerde llegar temprano, no vaya a llegar a media misa e interrumpir al padre, luego hay unos 
+						que son bien enojones, apate no sea naco no mame.
+                    </p>
+                </div>
+                <div class="wp5">
+                    <h5>Recepcion <span class="time">8:00PM - 1AM (mas o menos)</span></h5>
+                    <p>La recepcion sera en el salon Candilejas, recuerde que los novios nos iremos a tomar fotos despues de la misa, 
+						para que si le da hambre, compre un chocolate o algo para que aguante, recuerde cuidar a sus niños. y bailar mucho
+						si no cuenta con crías, se serviran margaritas y piñas coladas a la llegada de los invitados, y ahi nos esperan sentados
+						en lo que llegamos.
+							Atte Los Novioz.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
+                <div class="wp4">
+                    <p><strong>Ya en la Recepcion</strong></p>
+
+                    <h5>Bailecito con los papás y mamás <span class="time">8PM-9PM</span></h5>
+                    <p>Creo, creeeo, que lo primero es llegar y medio bailamos los novios, luego pasan al papa de la novia,
+						baila el Vals con su papá, luego el novio vaila brake dance con su mamá, como dicta la trandicion, despues
+                        habrá final wedding ceremony starts.</p>
+                </div>
+                <div class="wp6">
+                    <h5>Bailecito de los Esposos <span class="time">6PM-12AM</span></h5>
+                    <p>Ya como don Alex y doña Carola, llevan a la ejecuzion los pasos tradicionalmente prohibidos del Valds de casados
+						despues de eso, no recuerdo que pasa, pero esperen la vibora de la Mar y cosas asi destructivas y emociones 
+						intensas, recuerden, esta boda es Kids Inclusive, no discriminamos si tienes medio año de vida, lo que si discriminaremos
+						es a los papás de los niños si llega a pasarles algo. CUIDEN A SUS NIÑOS.
+                        </p>
+                </div>
+            </div>
+        </div>
+        <div class="row section-padding">
+            <div class="col-md-4 col-md-offset-4 text-center">
+                <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal">
+                    <i class="fa fa-barcode"></i>&nbsp;&nbsp;Codigo de Vestimenta
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                    </button>
+                    <h3 class="text-center section-padding">Achis... dress code?, eso con que se come?</h3>
+                    <h5>Para la iglesia <span class="time">1PM - 5PM</span></h5>
+                    <p>
+                        <strong>Ropita formalona</strong>
+                        <br>
+                        Las damitas pueden usar vestido, nomas no mame, no se vista de blanco, aqui un ejemplo:
+                        <a href="https://www.pinterest.com/ramswarooppatra/mehndi-dress-for-women/">ejemplo chido</a>
+                        y los caballeros, solo no vaya encuerao, aqui otro ejemplo:
+                        their <a href="https://www.pinterest.com/ramswarooppatra/mehndi-dress-for-men/">otro ejemplo</a>, 
+						no se vaya en chanclas, porque una ves mi novia piso un vidrio y se cortó, 
+						y eso le puede pasar a usted :)
+                    </p>
+                    <h5>Ya estando en la recepcion <span class="time">7PM - 12AM</span></h5>
+                    <p>
+                        <strong>Formal, Cocktail</strong>
+                        <br>
+                        El clasico trajecillo, echese un clavado en pinterest, 
+						lo invito:
+                        <a href="https://www.pinterest.com/ramswarooppatra/cocktail-night-outfit-for-women/">ladies</a>
+                        & <a href="https://www.pinterest.com/ramswarooppatra/cocktail-night-outfit-for-men/">gents</a>.
+                    </p>
+                    <h5>En la Torna <span class="time">6PM-12AM</span></h5>
+                    <p>
+                        <strong>Lo que usted quiera</strong>
+                        <br>
+                        Si esta muy destruido, instruya a su amigue de confianza para que le tape la panza o le diga si se
+						le sale una chichi,
+                        <a href="https://www.pinterest.com/ramswarooppatra/indo-western-lehengas/">ropa1</a>,
+                        <a href="https://www.pinterest.com/ramswarooppatra/indo-western-anarkalis/">ropajes2</a>,
+                        <a href="https://www.pinterest.com/ramswarooppatra/high-neck-jackets-for-men/">ropajes3</a> :D
+                    </p>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+</section>
+
+<section id="hotel" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3>y... en donde nos podemos quedar? </h3>
+                <p>Le recomendamos hospedarse en el 	
+                    <a href="https://www.hotelesmilenium.com/istay-ciudad-victoria" target="_blank">iStay Hotel</a>
+				Solo con mencionar que va a la boda de Caro y Alex, o bien, si no se acuerda de nuestros nombres, use el codigo 55555 :P para un descuentillo
+				</p>
+				<p>Aqui puedes ver la <a href="https://maps.app.goo.gl/zdeDyFs6cGoZ3AJB7">ubicacion</a></p>	
+            </div>
+        </div>
+        <div class="row">
+			<div >
+            	<!--div id="map-content" class="hidden-lg hidden-md"-->
+                <div id="map-content" >
+                        <center>	
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3291.2395286077003!2d-99.14461530955413!3d23.752433997482427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8679530b53a3d381%3A0xb14a34d538dcc219!2siStay%20Hotel%20Ciudad%20Victoria!5e0!3m2!1ses-419!2smx!4v1705871203802!5m2!1ses-419!2smx" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </center>	
+				</div>
+                <!--div id="map-content" class="hidden-lg">
+                    <center>	
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3291.2395286077003!2d-99.14461530955413!3d23.752433997482427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8679530b53a3d381%3A0xb14a34d538dcc219!2siStay%20Hotel%20Ciudad%20Victoria!5e0!3m2!1ses-419!2smx!4v1705871203802!5m2!1ses-419!2smx" width="320" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </center>	
+				</div>
+                <div id="map-content" class="hidden-sm">
+                    <center>	
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3291.2395286077003!2d-99.14461530955413!3d23.752433997482427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8679530b53a3d381%3A0xb14a34d538dcc219!2siStay%20Hotel%20Ciudad%20Victoria!5e0!3m2!1ses-419!2smx!4v1705871203802!5m2!1ses-419!2smx" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </center>
+                </div>
+                <div id="map-content" class="hidden-xs">
+                    <center>	
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3291.2395286077003!2d-99.14461530955413!3d23.752433997482427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8679530b53a3d381%3A0xb14a34d538dcc219!2siStay%20Hotel%20Ciudad%20Victoria!5e0!3m2!1ses-419!2smx!4v1705871203802!5m2!1ses-419!2smx" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </center>
+                </div-->
+            </div>
+            <!--
+            <div class="col-md-4 col-md-offset-4">	
+            	<div id="map-content" class="pointer-events-auto">
+				<center>
+
+           		</center>
+				</div>
+		   </div>
+		   -->
+        </div>
+    </div>
+	<div class="container">
+		<div class="row">
+           <div class="section-border section-padding"></div>
+       	</div>
+	</div>
+</section>
+
+<section id="fondea" class="section-padding">
+    <div class="container-fluid">
+        <div class="wp3">
+            <div class="col-md-12 text-center">
+                <h3 class="header">Fondea la luna de miel ;)</h3>
+            	<p> No sabes qué es un buen regalo para nosotros, tus personas favoritas?<br>
+            	 No sabes si esa licuadora que turbo velocidad, y aspas de adamantio sera un buen regalo?<br>
+            	<p> Puedes regalarnos solo dinero...   puedes pensar que es algo frío, algo feito, pero recuerda, ese dinero representa tiempo de tu vida, <br>
+				nos regalarias vida y asi fondearias nuestra luna de miel, que en esta economia, esta dificil costearse un viaje con todo <br>
+				pagado a Fiji, Japon, escala en Italia, las islas Polinesias, Venezuela, Mordor, y destino final Petra, cerca de la franja de Gaza :D</p>
+			</div>
+			 <div class="col-md-12 text-center">
+            	<p> Puedes depositarnos ( sin que se de cuenta el SAT) a la cuenta <strong>5555 5555 555 55</strong></p>
+			</div>
+        </div>
+	 	<div class="col-md-12 text-center">
+				<p>O tambien puedes mandar un CODI, si no le sabes, pregunta a tu banquero de confianza ;)</p>
+                <a class="fancybox" rel="group" href="img/eng_pics/querre.png">
+                    <div class="img-wrap hidden-md hidden-sm hidden-xs">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <center>
+                            <img src="img/eng_pics/querre.png" width="20%" height="20%"/>
+                        </center>
+                    </div>
+                    <div class="img-wrap hidden-lg hidden-sm hidden-xs">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <center>
+                            <img src="img/eng_pics/querre.png" width="30%" height="30%"/>
+                        </center>
+                    </div>
+                    <div class="img-wrap hidden-lg hidden-md hidden-xs">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <center>
+                            <img src="img/eng_pics/querre.png" width="40%" height="40%"/>
+                        </center>
+                    </div>
+                    <div class="img-wrap hidden-lg hidden-md hidden-sm">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <center>
+                            <img src="img/eng_pics/querre.png" width="50%" height="50%"/>
+                        </center>
+                    </div>
+                </a>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="section-border section-padding"></div>
+        </div>
+    </div>
+    <!--<div class="row">
+        <div class="col-md-12">
+            <div class="diamond floating-logo">
+                <img src="img/sketch-logo.png" alt="Sketch Logo">
+                <div class="ring"></div>
+            </div>
+        </div>
+    </div>-->
+</section>
+
+<section id="video-bg" class="hidden-sm hidden-xs">
+    <div id="bgndVideo" class="player"
+         data-property="{videoURL:'https://www.youtube.com/watch?v=oJEuOi-SFW0',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:88, stopAt:259, opacity:1}">
+    </div>
+    <div id="video-content">
+        <h5>Tamaulipas</h5>
+        <p>Viva tamaulipaz altiva ieroika.. :D<br>
+		 Lugar de montes altos, <br>
+		 o lugar donde se reza mucho :v
+		</p>
+    </div>
+</section>
+
+<section id="map" class="section-padding">
+    <div class="text-center">
+        <h3>Dónde será el evento? como puedo llegar?</h3>
+        <p>Aqui puedes ver las ubicaciones de la <a href="https://maps.app.goo.gl/Q7UksGnvFFjnWAoSA">Recepcion</a> 
+			y la <a href="https://maps.app.goo.gl/mgKqRN4kg6t1hZde8">iglesia</a>
+        </p>	
+    </div>
+
+<!--
+    	<div class="row">
+        	<div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
+            	<div id="map-content" class="pointer-events-auto">
+				<center>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2986.8767279672525!2d-99.1463062890913!3d23.75182517984486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8679530af2d45719%3A0x4445d12df94ecbe!2sParroquia%20del%20Buen%20Pastor!5e0!3m2!1ses!2smx!4v1704405133222!5m2!1ses!2smx" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </center>
+				</div>
+            </div>
+        </div>
+    	<div class="row">
+        	<div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
+            	<div id="map-content" class="pointer-events-auto">
+					<center>
+                		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2090.0235990345045!2d-99.14703171009225!3d23.762547483393046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86795376225221b5%3A0x52b77b2b1b22703a!2sCandilejas%20Eventos!5e0!3m2!1ses!2smx!4v1704473127103!5m2!1ses!2smx" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                	</center>
+				</div>
+            </div>
+        </div>
+-->
+ <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
+                <div class="wp3">
+					<center>
+                        <div id="map-content" class="pointer-events-auto">
+                            <p><strong>Inglesia</strong></p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8389.680192325848!2d-99.1473858299286!3d23.753824799655582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8679530af2d45719%3A0x4445d12df94ecbe!2sParroquia%20del%20Buen%20Pastor!5e0!3m2!1ses!2smx!4v1706838348766!5m2!1ses!2smx" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+					</center>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
+                <div class="wp4">
+                    
+                    <center>
+                        <div id="map-content" class="pointer-events-auto">
+                            <p><strong>Recepción</strong></p>
+                				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2090.0235990345045!2d-99.14703171009225!3d23.762547483393046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86795376225221b5%3A0x52b77b2b1b22703a!2sCandilejas%20Eventos!5e0!3m2!1ses!2smx!4v1704473127103!5m2!1ses!2smx" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+					</center>	
+                </div>
+            </div>
+        </div>
+ </div>
+		<div class="container">
+        	<div class="row">
+            	<div class="section-border section-padding"></div>
+        	</div>
+    	</div>
+    
+</section>
+
+<section class="rsvp text-center" id="rsvp">
+
+    <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                    </button>
+                    <div class="section-padding">
+                        <h3>Gracias!!</h3>
+                        <p>Se ha registrado tu confirmacion, nos vemos el gran dia :D </p>
+                        <!--div id="add-to-cal"></div-->
+                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <h3>Si Vendras?</h3>
+                <p>Agradeceriamos mucho que pudieran confirmar antes de Agosto 2024 </p>
+                <form id="rsvp-form" class="rsvp-form"
+                      action=""
+                      method="POST">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-envelope"></i><input type="number" name="contacto" class="" min="0"
+                                                                     placeholder="Número de Contacto"
+                                                                     required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-user"></i><input name="name" class=""
+                                                                 placeholder="Tu Nombre"
+                                                                 required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
+                                                                  max="10" 
+                                                                  placeholder="Acompañantes"
+                                                                  required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
+                                                                class="" min="0"
+                                                                placeholder="Codigo de Invitado"
+                                                                required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" id="alert-wrapper"></div>
+                    </div>
+                    <button class="btn-fill rsvp-btn">
+                        Registrar Confirmacion!
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center content">
+                <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
+                <p>Pirateado con todo mi <span class="fa fa-heart pulse2"></span> para Caro</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/vendor/jquery-1.11.2.min.js" onerror="loadJsFromCDN('jquery.js')"></script>
+<script src="node_modules/waypoints/lib/jquery.waypoints.min.js" onerror="loadJsFromCDN('waypoints.js')"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/jquery.mb.YTPlayer.min.js"></script>
+<script src="js/vendor/ouical.js"></script>
+<script src="js/scripts.min.js"></script>
+<!--script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlPw3GQYI3faa_9mRE6plWuM7xNEmrwH0&callback=initMap"></script-->
+<!-- Google Analytics -->
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-46465113-4', 'auto');
+    ga('send', 'pageview');
+</script>
+</body>
+</html>
