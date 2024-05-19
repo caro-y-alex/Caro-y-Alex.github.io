@@ -200,7 +200,7 @@ $(document).ready(function () {
             address: 'Vitoria Tamaulipas, Mexico',
 
             // Event Description
-            description: "We can't wait to see you on our big day. For any queries or issues, please contact mr X 0190020120120"
+            description: ""
         }
     });
 
@@ -234,6 +234,29 @@ $(document).ready(function () {
                 });
         }
     });
+
+
+    $('#song-form').on('submit', function (e) {
+        e.preventDefault();
+        var data = $(this).serialize();
+
+        $('#alert-wrapper').html(alert_markup('info', '<strong>Espere...</strong> se está guardando su informacion .'));        
+        $.post('https://script.google.com/macros/s/AKfycbxDLnUhL2fwc227D-ncToDuuieVVtLimOfWdDQJnveQuCHYic6Z-DmdXEnZj8xzHOn4hA/exec', data)                
+            .done(function (data) {
+                console.log(data);
+                if (data.result === "error") {
+                        $('#alert-wrapper').html(alert_markup('danger', data.message));
+                } else {
+                    $('#alert-wrapper').html('');
+                    $('#song-modal').modal('show');
+                }
+            }).fail(function (data) {
+                console.log(data);
+                $('#alert-wrapper').html(alert_markup('danger', '<strong>Oops!</strong> hay un problema con el servidor. '));
+            });
+        }
+    });
+
 
 });
 
