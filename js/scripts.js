@@ -238,26 +238,25 @@ $(document).ready(function () {
 
     $('#song-form').on('submit', function (e) {
         e.preventDefault();
-        var data2 = $(this).serialize();
+        var data = $(this).serialize();
 
-        $('#alert-wrapper').html(alert_markup('info', '<strong>Espere...</strong> se está guardando su informacion .'));        
-
-        $.post('https://script.google.com/macros/s/AKfycbwrSnnHXKQvoy7jhdC4_kf6tV9dTe2buqv6f1H6Ypf8tlNplX3xsRaxXtcjo3mV6h4/exec', data2)                
-            .done(function (data2) {
-                console.log(data2);
-                if (data2.result === "error") {
-                        $('#alert-wrapper').html(alert_markup('danger', data2.message));
-                } else {
-                    $('#alert-wrapper').html('');
-                    $('#song-modal').modal('show');
-                }
-            }).fail(function (data2) {
-                console.log(data2);
-                $('#alert-wrapper').html(alert_markup('danger', '<strong>Oops!</strong> hay un problema con el servidor. '));
-            });
+        $('#alert-wrapper2').html(alert_markup('info', '<strong>Espere...</strong> se está guardando su informacion .'));
+            $.post('https://script.google.com/macros/s/AKfycbwBaFvy10ymIeF5U92iJ6RieoSLBMu1oMktgoK_U5zX3BPDHzpQLg6tU-EH8qQVBaImmA/exec', data)
+                .done(function (data) {
+                    console.log(data);
+                    if (data.result === "error") {
+                        $('#alert-wrapper').html(alert_markup('danger', data.message));
+                    } else {
+                        $('#alert-wrapper').html('');
+                        $('#song-modal').modal('show');
+                    }
+                })
+                .fail(function (data) {
+                    console.log(data);
+                    $('#alert-wrapper').html(alert_markup('danger', '<strong>Oops!</strong> hay un problema con el servidor. '));
+                });
         
     });
-
 
 });
 

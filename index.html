@@ -40,13 +40,15 @@
         }
 
         // load js files from CDN if local node_modules fail
-        function loadJsFromCDN(js) {
+        
+            /*function loadJsFromCDN(js) {
             if (js === 'waypoints.js') {
                 document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"><\/script>');
             } else if (js === 'jquery.js') {
                 document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"><\/script>');
             }
-        }
+            }*/
+        
     </script>
 
     <link rel="stylesheet" href="css/normalize.min.css">
@@ -226,25 +228,25 @@
             </div>
         </div>
 
-    <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
-                    </button>
-                    <h3 class="text-center section-padding">CÓDIGO DE VESTIMENTA </h3>
-                    <p>
-                        <strong>Formal</strong><br>
-                        Si no se te ocurre qué usar aquí te damos algunas ideas que pueden funcionar. 
-                        Recuerda, aquí la única regla es no ir de blanco y aplica para todos  ;) <br>
-                        <a href="https://pin.it/5zdFOVQa3"><strong>Ideas mujer</strong></a><br>
-                        <a href="https://pin.it/2tkb1cyw3"><strong>Ideas hombres</strong></a><br>
-                    </p>                                                                                
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
+        <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                        </button>
+                        <h3 class="text-center section-padding">CÓDIGO DE VESTIMENTA </h3>
+                        <p>
+                            <strong>Formal</strong><br>
+                            Si no se te ocurre qué usar aquí te damos algunas ideas que pueden funcionar. 
+                            Recuerda, aquí la única regla es no ir de blanco y aplica para todos  ;) <br>
+                            <a href="https://pin.it/5zdFOVQa3"><strong>Ideas mujer</strong></a><br>
+                            <a href="https://pin.it/2tkb1cyw3"><strong>Ideas hombres</strong></a><br>
+                        </p>                                                                                
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+    </div>
     <div class="container">
         <div class="row">
             <div class="section-border section-padding"></div>
@@ -253,7 +255,7 @@
 
 </section>
 
-<section id="song text-center" class="section-padding">
+<section class="song text-center" id="song">
 
     <div id="song-modal" class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
@@ -263,7 +265,7 @@
                     </button>
                     <div class="section-padding">
                         <h3>Gracias!</h3>
-                        <p>Se ha registrado tu recomendacion!! </p>
+                        <p>Se ha registrado tu recomendacion!! </p>                        
                     </div>
                 </div>
             </div>
@@ -272,25 +274,30 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-12 text-center">
+            <div class="col-md-6 col-md-offset-3">
                 <h3>Ayudanos con la playlist</h3>
                 <p> <b>Cuéntanos qué canción crees que no puede faltar durante la fiesta</b></p>
-            </div>            
-            <center>
                 <form id="song-form" class="song-form" action="" method="POST">
-                    <textarea name="text" cols="40" rows="3" name="song" id="song"></textarea><br>
+                    <div class="row">
+                        <b>
+                            <div>
+                                <div class="form-input-group" >
+                                    <input name="name" class="" placeholder="...."-->
+                                </div>
+                            </div>                            
+                        </b>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12" id="alert-wrapper2"></div>
+                    </div>
                     <button class="btn-fill song-btn">
-                        <b>guardar! </b>
+                        <b>Guardar! </b>
                     </button>
                 </form>
-            </center>
+            </div>
         </div>
-    </div>        
-	<div class="container">
-		<div class="row">
-           <div class="section-border section-padding"></div>
-       	</div>
-	</div>
+    </div>
 </section>
 
 <section id="hotel" class="section-padding">
@@ -335,7 +342,9 @@
             <div class="col-md-12 text-center">
                 <h3 class="header">Mesa de regalos </h3>
             	<p> Para nosotros, tu presencia en este día tan especial es el regalo que más valoramos.<br>
-                    Pero si deseas darnos otro obsequio, puedes ser de nuestra mesa de regalos en <a href="https://www.amazon.com.mx/wedding/registry/3OZ97CD65W7B9"><b>Amazon</b></a>
+                    Pero si deseas darnos otro obsequio, puedes ser de nuestra mesa de regalos en <a href="https://www.amazon.com.mx/wedding/registry/3OZ97CD65W7B9"><b>Amazon</b></a> por
+                    <a href="modal" data-toggle="modal" data-target="#ss-modal"><b> transferencia</b></a> o sobre el dia de la boda :D
+                </p>  
 			</div>
             <div>
                 <div class="image" >
@@ -349,6 +358,23 @@
 
         </div>
     </div>
+    <div id="ss-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                    </button>
+                    <h3 class="text-center section-padding">Datos de Transferencia</h3>
+                        <center>
+                            <strong>Cuenta CLABE:</strong> 014580566707705137<br>
+                            <strong>BANCO:</strong> SANTANDER <br>                            
+                            <strong>ALEJANDRO SANDOVAL ZARATE</strong> <br>                            
+                        </center>
+                        
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
     <div class="container">
         <div class="row">
             <div class="section-border section-padding"></div>
