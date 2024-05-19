@@ -159,7 +159,7 @@ $(document).ready(function () {
 
  //       share_bar[i].innerHTML = html;
  //       share_bar[i].style.display = 'inline-block';
-    }
+    //}
 
     /********************** Embed youtube video *********************/
     $('.player').YTPlayer();
@@ -238,21 +238,21 @@ $(document).ready(function () {
 
     $('#song-form').on('submit', function (e) {
         e.preventDefault();
-        var data = $(this).serialize();
+        var data2 = $(this).serialize();
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Espere...</strong> se está guardando su informacion .'));        
 
-        $.post('https://script.google.com/macros/s/AKfycbzKTHwM4nlngDfpE8vDc4VV_4M2iJYT_7fPykESpkb4djj64VHjpmo8bgmxqdI4_Qlk/exec', data)
-            .done(function (data) {
-                console.log(data);
-                if (data.result === "error") {
-                        $('#alert-wrapper').html(alert_markup('danger', data.message));
+        $.post('https://script.google.com/macros/s/AKfycbzKTHwM4nlngDfpE8vDc4VV_4M2iJYT_7fPykESpkb4djj64VHjpmo8bgmxqdI4_Qlk/exec', data2)
+            .done(function (data2) {
+                console.log(data2);
+                if (data2.result === "error") {
+                        $('#alert-wrapper').html(alert_markup('danger', data2.message));
                 } else {
                     $('#alert-wrapper').html('');
                     $('#song-modal').modal('show');
                 }
-            }).fail(function (data) {
-                console.log(data);
+            }).fail(function (data2) {
+                console.log(data2);
                 $('#alert-wrapper').html(alert_markup('danger', '<strong>Oops!</strong> hay un problema con el servidor. '));
             });
         
