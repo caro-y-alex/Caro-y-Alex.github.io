@@ -218,7 +218,7 @@ $(document).ready(function () {
            // && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Oops!</strong> Tu codigo de invitado es incorrecto'));
         } else {
-            $.post('https://script.google.com/macros/s/AKfycbwBaFvy10ymIeF5U92iJ6RieoSLBMu1oMktgoK_U5zX3BPDHzpQLg6tU-EH8qQVBaImmA/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbwBaFvy10ymIeF5U92iJ6RieoSLBMu1oMktgoK_U5zX3BPDHzpQLg6tU-EH8qQVBaImmA/exec', data)                    
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {
@@ -241,7 +241,7 @@ $(document).ready(function () {
         var data = $(this).serialize();
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Espere...</strong> se está guardando su informacion .'));        
-        $.post('https://script.google.com/macros/s/AKfycbxDLnUhL2fwc227D-ncToDuuieVVtLimOfWdDQJnveQuCHYic6Z-DmdXEnZj8xzHOn4hA/exec', data)                
+        $.post('https://script.google.com/macros/s/AKfycbzKTHwM4nlngDfpE8vDc4VV_4M2iJYT_7fPykESpkb4djj64VHjpmo8bgmxqdI4_Qlk/exec', data)
             .done(function (data) {
                 console.log(data);
                 if (data.result === "error") {
